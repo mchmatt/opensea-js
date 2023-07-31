@@ -1,4 +1,4 @@
-<!DOCTYPE html><html class="default" lang="en"><head><meta charSet="utf-8"/><meta http-equiv="x-ua-compatible" content="IE=edge"/><title>EventType | opensea-js</title><meta name="description" content="Documentation for opensea-js"/><meta name="viewport" content="width=device-width, initial-scale=1"/><link rel="stylesheet" href="../assets/style.css"/><link rel="stylesheet" href="../assets/highlight.css"/><script defer src="../assets/main.js"></script><script async src="../assets/search.js" id="tsd-search-script"></script></head><body><script>document.documentElement.dataset.theme = localStorage.getItem("tsd-theme") || "os"</script><header class="tsd-page-toolbar">
+<!DOCTYPE html><html class="default" lang="en"><head><meta charSet="utf-8"/><meta http-equiv="x-ua-compatible" content="IE=edge"/><title>EventType | opensea-js - v6.1.5</title><meta name="description" content="Documentation for opensea-js"/><meta name="viewport" content="width=device-width, initial-scale=1"/><link rel="stylesheet" href="../assets/style.css"/><link rel="stylesheet" href="../assets/highlight.css"/><script defer src="../assets/main.js"></script><script async src="../assets/search.js" id="tsd-search-script"></script></head><body><script>document.documentElement.dataset.theme = localStorage.getItem("tsd-theme") || "os"</script><header class="tsd-page-toolbar">
 <div class="tsd-toolbar-contents container">
 <div class="table-cell" id="tsd-search" data-base="..">
 <div class="field"><label for="tsd-search-field" class="tsd-widget tsd-toolbar-icon search no-caption"><svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M15.7824 13.833L12.6666 10.7177C12.5259 10.5771 12.3353 10.499 12.1353 10.499H11.6259C12.4884 9.39596 13.001 8.00859 13.001 6.49937C13.001 2.90909 10.0914 0 6.50048 0C2.90959 0 0 2.90909 0 6.49937C0 10.0896 2.90959 12.9987 6.50048 12.9987C8.00996 12.9987 9.39756 12.4863 10.5008 11.6239V12.1332C10.5008 12.3332 10.5789 12.5238 10.7195 12.6644L13.8354 15.7797C14.1292 16.0734 14.6042 16.0734 14.8948 15.7797L15.7793 14.8954C16.0731 14.6017 16.0731 14.1267 15.7824 13.833ZM6.50048 10.499C4.29094 10.499 2.50018 8.71165 2.50018 6.49937C2.50018 4.29021 4.28781 2.49976 6.50048 2.49976C8.71001 2.49976 10.5008 4.28708 10.5008 6.49937C10.5008 8.70852 8.71314 10.499 6.50048 10.499Z" fill="var(--color-text)"></path></svg></label><input type="text" id="tsd-search-field" aria-label="Search"/></div>
@@ -6,7 +6,7 @@
 <div id="tsd-toolbar-links"></div></div>
 <ul class="results">
 <li class="state loading">Preparing search index...</li>
-<li class="state failure">The search index is not available</li></ul><a href="../index.html" class="title">opensea-js</a></div>
+<li class="state failure">The search index is not available</li></ul><a href="../index.html" class="title">opensea-js - v6.1.5</a></div>
 <div class="table-cell" id="tsd-widgets"><a href="#" class="tsd-widget tsd-toolbar-icon menu no-caption" data-toggle="menu" aria-label="Menu"><svg width="16" height="16" viewBox="0 0 16 16" fill="none"><rect x="1" y="3" width="14" height="2" fill="var(--color-text)"></rect><rect x="1" y="7" width="14" height="2" fill="var(--color-text)"></rect><rect x="1" y="11" width="14" height="2" fill="var(--color-text)"></rect></svg></a></div></div></header>
 <div class="container container-main">
 <div class="col-content">
@@ -16,25 +16,12 @@
 <li><a href="EventType.html">EventType</a></li></ul>
 <h1>Enumeration EventType</h1></div>
 <section class="tsd-panel tsd-comment">
-<div class="tsd-comment tsd-typography"><p>Events emitted by the SDK. There are five types:</p>
-<ol>
-<li>Transaction events, which tell you when a new transaction was
-created, confirmed, denied, or failed.</li>
-<li>pre-transaction events, which are named (like &quot;WrapEth&quot;) and indicate
-that ethers is asking for a signature on a transaction that needs to occur before
-an order is made or fulfilled. This includes approval events and account
-initialization.</li>
-<li>Basic actions: matching, cancelling, and creating orders.
-The &quot;CreateOrder&quot; event fires when a signature is being prompted
-to create an off-chain order. The &quot;OrderDenied&quot; event fires when a signature
-request is denied by the user.</li>
-<li>The &quot;TransferAll&quot; event, which fires when a user is about to directly
-transfer one or more assets to another account</li>
-</ol>
+<div class="tsd-comment tsd-typography"><p>Events emitted by the SDK which can be used by frontends applications
+to update state or show useful messages to users.</p>
 </div>
 <div class="tsd-comment tsd-typography"></div></section><aside class="tsd-sources">
 <ul>
-<li>Defined in <a href="https://github.com/ProjectOpenSea/opensea-js/blob/89cdaa3/src/types.ts#L20">types.ts:20</a></li></ul></aside>
+<li>Defined in <a href="https://github.com/ProjectOpenSea/opensea-js/blob/bea2b4c/src/types.ts#L10">types.ts:10</a></li></ul></aside>
 <section class="tsd-panel-group tsd-index-group">
 <section class="tsd-panel tsd-index-panel">
 <details class="tsd-index-content tsd-index-accordion" open><summary class="tsd-accordion-summary tsd-index-summary">
@@ -42,147 +29,91 @@ transfer one or more assets to another account</li>
 <div class="tsd-accordion-details">
 <section class="tsd-index-section">
 <h3 class="tsd-index-heading">Enumeration Members</h3>
-<div class="tsd-index-list"><a href="EventType.html#ApproveAllAssets" class="tsd-index-link"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><g id="icon-1024"><rect fill="var(--color-icon-background)" stroke="#FF984D" stroke-width="1.5" x="1" y="1" width="22" height="22" rx="12"></rect><path d="M9.354 16V7.24H12.174C12.99 7.24 13.638 7.476 14.118 7.948C14.606 8.412 14.85 9.036 14.85 9.82C14.85 10.604 14.606 11.232 14.118 11.704C13.638 12.168 12.99 12.4 12.174 12.4H10.434V16H9.354ZM10.434 11.428H12.174C12.646 11.428 13.022 11.284 13.302 10.996C13.59 10.7 13.734 10.308 13.734 9.82C13.734 9.324 13.59 8.932 13.302 8.644C13.022 8.356 12.646 8.212 12.174 8.212H10.434V11.428Z" fill="var(--color-text)"></path></g></svg><span>Approve<wbr/>All<wbr/>Assets</span></a>
-<a href="EventType.html#ApproveAsset" class="tsd-index-link"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-1024"></use></svg><span>Approve<wbr/>Asset</span></a>
-<a href="EventType.html#ApproveCurrency" class="tsd-index-link"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-1024"></use></svg><span>Approve<wbr/>Currency</span></a>
-<a href="EventType.html#ApproveOrder" class="tsd-index-link"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-1024"></use></svg><span>Approve<wbr/>Order</span></a>
-<a href="EventType.html#BulkCancelExistingOrders" class="tsd-index-link"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-1024"></use></svg><span>Bulk<wbr/>Cancel<wbr/>Existing<wbr/>Orders</span></a>
+<div class="tsd-index-list"><a href="EventType.html#ApproveOrder" class="tsd-index-link"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><g id="icon-1024"><rect fill="var(--color-icon-background)" stroke="#FF984D" stroke-width="1.5" x="1" y="1" width="22" height="22" rx="12"></rect><path d="M9.354 16V7.24H12.174C12.99 7.24 13.638 7.476 14.118 7.948C14.606 8.412 14.85 9.036 14.85 9.82C14.85 10.604 14.606 11.232 14.118 11.704C13.638 12.168 12.99 12.4 12.174 12.4H10.434V16H9.354ZM10.434 11.428H12.174C12.646 11.428 13.022 11.284 13.302 10.996C13.59 10.7 13.734 10.308 13.734 9.82C13.734 9.324 13.59 8.932 13.302 8.644C13.022 8.356 12.646 8.212 12.174 8.212H10.434V11.428Z" fill="var(--color-text)"></path></g></svg><span>Approve<wbr/>Order</span></a>
 <a href="EventType.html#CancelOrder" class="tsd-index-link"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-1024"></use></svg><span>Cancel<wbr/>Order</span></a>
-<a href="EventType.html#CreateOrder" class="tsd-index-link"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-1024"></use></svg><span>Create<wbr/>Order</span></a>
-<a href="EventType.html#InitializeAccount" class="tsd-index-link"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-1024"></use></svg><span>Initialize<wbr/>Account</span></a>
-<a href="EventType.html#LiquidateAssets" class="tsd-index-link"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-1024"></use></svg><span>Liquidate<wbr/>Assets</span></a>
 <a href="EventType.html#MatchOrders" class="tsd-index-link"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-1024"></use></svg><span>Match<wbr/>Orders</span></a>
-<a href="EventType.html#OrderDenied" class="tsd-index-link"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-1024"></use></svg><span>Order<wbr/>Denied</span></a>
-<a href="EventType.html#PurchaseAssets" class="tsd-index-link"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-1024"></use></svg><span>Purchase<wbr/>Assets</span></a>
 <a href="EventType.html#TransactionConfirmed" class="tsd-index-link"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-1024"></use></svg><span>Transaction<wbr/>Confirmed</span></a>
 <a href="EventType.html#TransactionCreated" class="tsd-index-link"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-1024"></use></svg><span>Transaction<wbr/>Created</span></a>
 <a href="EventType.html#TransactionDenied" class="tsd-index-link"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-1024"></use></svg><span>Transaction<wbr/>Denied</span></a>
 <a href="EventType.html#TransactionFailed" class="tsd-index-link"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-1024"></use></svg><span>Transaction<wbr/>Failed</span></a>
-<a href="EventType.html#TransferAll" class="tsd-index-link"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-1024"></use></svg><span>Transfer<wbr/>All</span></a>
-<a href="EventType.html#TransferOne" class="tsd-index-link"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-1024"></use></svg><span>Transfer<wbr/>One</span></a>
-<a href="EventType.html#UnapproveCurrency" class="tsd-index-link"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-1024"></use></svg><span>Unapprove<wbr/>Currency</span></a>
-<a href="EventType.html#UnwrapAssets" class="tsd-index-link"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-1024"></use></svg><span>Unwrap<wbr/>Assets</span></a>
 <a href="EventType.html#UnwrapWeth" class="tsd-index-link"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-1024"></use></svg><span>Unwrap<wbr/>Weth</span></a>
-<a href="EventType.html#WrapAssets" class="tsd-index-link"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-1024"></use></svg><span>Wrap<wbr/>Assets</span></a>
 <a href="EventType.html#WrapEth" class="tsd-index-link"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-1024"></use></svg><span>Wrap<wbr/>Eth</span></a>
 </div></section></div></details></section></section>
 <section class="tsd-panel-group tsd-member-group">
 <h2>Enumeration Members</h2>
-<section class="tsd-panel tsd-member"><a id="ApproveAllAssets" class="tsd-anchor"></a>
-<h3 class="tsd-anchor-link"><span>Approve<wbr/>All<wbr/>Assets</span><a href="#ApproveAllAssets" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><g stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round" id="icon-anchor"><path stroke="none" d="M0 0h24v24H0z" fill="none"></path><path d="M10 14a3.5 3.5 0 0 0 5 0l4 -4a3.5 3.5 0 0 0 -5 -5l-.5 .5"></path><path d="M14 10a3.5 3.5 0 0 0 -5 0l-4 4a3.5 3.5 0 0 0 5 5l.5 -.5"></path></g></svg></a></h3>
-<div class="tsd-signature"><span class="tsd-kind-enum-member">Approve<wbr/>All<wbr/>Assets</span><span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">&quot;ApproveAllAssets&quot;</span></div><aside class="tsd-sources">
-<ul>
-<li>Defined in <a href="https://github.com/ProjectOpenSea/opensea-js/blob/89cdaa3/src/types.ts#L33">types.ts:33</a></li></ul></aside></section>
-<section class="tsd-panel tsd-member"><a id="ApproveAsset" class="tsd-anchor"></a>
-<h3 class="tsd-anchor-link"><span>Approve<wbr/>Asset</span><a href="#ApproveAsset" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></h3>
-<div class="tsd-signature"><span class="tsd-kind-enum-member">Approve<wbr/>Asset</span><span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">&quot;ApproveAsset&quot;</span></div><aside class="tsd-sources">
-<ul>
-<li>Defined in <a href="https://github.com/ProjectOpenSea/opensea-js/blob/89cdaa3/src/types.ts#L32">types.ts:32</a></li></ul></aside></section>
-<section class="tsd-panel tsd-member"><a id="ApproveCurrency" class="tsd-anchor"></a>
-<h3 class="tsd-anchor-link"><span>Approve<wbr/>Currency</span><a href="#ApproveCurrency" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></h3>
-<div class="tsd-signature"><span class="tsd-kind-enum-member">Approve<wbr/>Currency</span><span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">&quot;ApproveCurrency&quot;</span></div><aside class="tsd-sources">
-<ul>
-<li>Defined in <a href="https://github.com/ProjectOpenSea/opensea-js/blob/89cdaa3/src/types.ts#L31">types.ts:31</a></li></ul></aside></section>
 <section class="tsd-panel tsd-member"><a id="ApproveOrder" class="tsd-anchor"></a>
-<h3 class="tsd-anchor-link"><span>Approve<wbr/>Order</span><a href="#ApproveOrder" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></h3>
-<div class="tsd-signature"><span class="tsd-kind-enum-member">Approve<wbr/>Order</span><span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">&quot;ApproveOrder&quot;</span></div><aside class="tsd-sources">
+<h3 class="tsd-anchor-link"><span>Approve<wbr/>Order</span><a href="#ApproveOrder" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><g stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round" id="icon-anchor"><path stroke="none" d="M0 0h24v24H0z" fill="none"></path><path d="M10 14a3.5 3.5 0 0 0 5 0l4 -4a3.5 3.5 0 0 0 -5 -5l-.5 .5"></path><path d="M14 10a3.5 3.5 0 0 0 -5 0l-4 4a3.5 3.5 0 0 0 5 5l.5 -.5"></path></g></svg></a></h3>
+<div class="tsd-signature"><span class="tsd-kind-enum-member">Approve<wbr/>Order</span><span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">&quot;ApproveOrder&quot;</span></div>
+<div class="tsd-comment tsd-typography"><p>Emitted when the <a href="../classes/OpenSeaSDK.html#approveOrder" class="tsd-kind-method">approveOrder</a> method is called.</p>
+</div>
+<div class="tsd-comment tsd-typography"></div><aside class="tsd-sources">
 <ul>
-<li>Defined in <a href="https://github.com/ProjectOpenSea/opensea-js/blob/89cdaa3/src/types.ts#L40">types.ts:40</a></li></ul></aside></section>
-<section class="tsd-panel tsd-member"><a id="BulkCancelExistingOrders" class="tsd-anchor"></a>
-<h3 class="tsd-anchor-link"><span>Bulk<wbr/>Cancel<wbr/>Existing<wbr/>Orders</span><a href="#BulkCancelExistingOrders" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></h3>
-<div class="tsd-signature"><span class="tsd-kind-enum-member">Bulk<wbr/>Cancel<wbr/>Existing<wbr/>Orders</span><span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">&quot;BulkCancelExistingOrders&quot;</span></div><aside class="tsd-sources">
-<ul>
-<li>Defined in <a href="https://github.com/ProjectOpenSea/opensea-js/blob/89cdaa3/src/types.ts#L39">types.ts:39</a></li></ul></aside></section>
+<li>Defined in <a href="https://github.com/ProjectOpenSea/opensea-js/blob/bea2b4c/src/types.ts#L50">types.ts:50</a></li></ul></aside></section>
 <section class="tsd-panel tsd-member"><a id="CancelOrder" class="tsd-anchor"></a>
 <h3 class="tsd-anchor-link"><span>Cancel<wbr/>Order</span><a href="#CancelOrder" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></h3>
-<div class="tsd-signature"><span class="tsd-kind-enum-member">Cancel<wbr/>Order</span><span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">&quot;CancelOrder&quot;</span></div><aside class="tsd-sources">
+<div class="tsd-signature"><span class="tsd-kind-enum-member">Cancel<wbr/>Order</span><span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">&quot;CancelOrder&quot;</span></div>
+<div class="tsd-comment tsd-typography"><p>Emitted when the <a href="../classes/OpenSeaSDK.html#cancelOrder" class="tsd-kind-method">cancelOrder</a> method is called.</p>
+</div>
+<div class="tsd-comment tsd-typography"></div><aside class="tsd-sources">
 <ul>
-<li>Defined in <a href="https://github.com/ProjectOpenSea/opensea-js/blob/89cdaa3/src/types.ts#L38">types.ts:38</a></li></ul></aside></section>
-<section class="tsd-panel tsd-member"><a id="CreateOrder" class="tsd-anchor"></a>
-<h3 class="tsd-anchor-link"><span>Create<wbr/>Order</span><a href="#CreateOrder" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></h3>
-<div class="tsd-signature"><span class="tsd-kind-enum-member">Create<wbr/>Order</span><span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">&quot;CreateOrder&quot;</span></div><aside class="tsd-sources">
-<ul>
-<li>Defined in <a href="https://github.com/ProjectOpenSea/opensea-js/blob/89cdaa3/src/types.ts#L41">types.ts:41</a></li></ul></aside></section>
-<section class="tsd-panel tsd-member"><a id="InitializeAccount" class="tsd-anchor"></a>
-<h3 class="tsd-anchor-link"><span>Initialize<wbr/>Account</span><a href="#InitializeAccount" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></h3>
-<div class="tsd-signature"><span class="tsd-kind-enum-member">Initialize<wbr/>Account</span><span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">&quot;InitializeAccount&quot;</span></div><aside class="tsd-sources">
-<ul>
-<li>Defined in <a href="https://github.com/ProjectOpenSea/opensea-js/blob/89cdaa3/src/types.ts#L28">types.ts:28</a></li></ul></aside></section>
-<section class="tsd-panel tsd-member"><a id="LiquidateAssets" class="tsd-anchor"></a>
-<h3 class="tsd-anchor-link"><span>Liquidate<wbr/>Assets</span><a href="#LiquidateAssets" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></h3>
-<div class="tsd-signature"><span class="tsd-kind-enum-member">Liquidate<wbr/>Assets</span><span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">&quot;LiquidateAssets&quot;</span></div><aside class="tsd-sources">
-<ul>
-<li>Defined in <a href="https://github.com/ProjectOpenSea/opensea-js/blob/89cdaa3/src/types.ts#L52">types.ts:52</a></li></ul></aside></section>
+<li>Defined in <a href="https://github.com/ProjectOpenSea/opensea-js/blob/bea2b4c/src/types.ts#L46">types.ts:46</a></li></ul></aside></section>
 <section class="tsd-panel tsd-member"><a id="MatchOrders" class="tsd-anchor"></a>
 <h3 class="tsd-anchor-link"><span>Match<wbr/>Orders</span><a href="#MatchOrders" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></h3>
-<div class="tsd-signature"><span class="tsd-kind-enum-member">Match<wbr/>Orders</span><span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">&quot;MatchOrders&quot;</span></div><aside class="tsd-sources">
+<div class="tsd-signature"><span class="tsd-kind-enum-member">Match<wbr/>Orders</span><span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">&quot;MatchOrders&quot;</span></div>
+<div class="tsd-comment tsd-typography"><p>Emitted when fulfilling a public or private order.</p>
+</div>
+<div class="tsd-comment tsd-typography"></div><aside class="tsd-sources">
 <ul>
-<li>Defined in <a href="https://github.com/ProjectOpenSea/opensea-js/blob/89cdaa3/src/types.ts#L37">types.ts:37</a></li></ul></aside></section>
-<section class="tsd-panel tsd-member"><a id="OrderDenied" class="tsd-anchor"></a>
-<h3 class="tsd-anchor-link"><span>Order<wbr/>Denied</span><a href="#OrderDenied" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></h3>
-<div class="tsd-signature"><span class="tsd-kind-enum-member">Order<wbr/>Denied</span><span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">&quot;OrderDenied&quot;</span></div><aside class="tsd-sources">
-<ul>
-<li>Defined in <a href="https://github.com/ProjectOpenSea/opensea-js/blob/89cdaa3/src/types.ts#L43">types.ts:43</a></li></ul></aside></section>
-<section class="tsd-panel tsd-member"><a id="PurchaseAssets" class="tsd-anchor"></a>
-<h3 class="tsd-anchor-link"><span>Purchase<wbr/>Assets</span><a href="#PurchaseAssets" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></h3>
-<div class="tsd-signature"><span class="tsd-kind-enum-member">Purchase<wbr/>Assets</span><span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">&quot;PurchaseAssets&quot;</span></div><aside class="tsd-sources">
-<ul>
-<li>Defined in <a href="https://github.com/ProjectOpenSea/opensea-js/blob/89cdaa3/src/types.ts#L53">types.ts:53</a></li></ul></aside></section>
+<li>Defined in <a href="https://github.com/ProjectOpenSea/opensea-js/blob/bea2b4c/src/types.ts#L42">types.ts:42</a></li></ul></aside></section>
 <section class="tsd-panel tsd-member"><a id="TransactionConfirmed" class="tsd-anchor"></a>
 <h3 class="tsd-anchor-link"><span>Transaction<wbr/>Confirmed</span><a href="#TransactionConfirmed" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></h3>
-<div class="tsd-signature"><span class="tsd-kind-enum-member">Transaction<wbr/>Confirmed</span><span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">&quot;TransactionConfirmed&quot;</span></div><aside class="tsd-sources">
+<div class="tsd-signature"><span class="tsd-kind-enum-member">Transaction<wbr/>Confirmed</span><span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">&quot;TransactionConfirmed&quot;</span></div>
+<div class="tsd-comment tsd-typography"><p>Emitted when the transaction has succeeded is mined and confirmed.</p>
+</div>
+<div class="tsd-comment tsd-typography"></div><aside class="tsd-sources">
 <ul>
-<li>Defined in <a href="https://github.com/ProjectOpenSea/opensea-js/blob/89cdaa3/src/types.ts#L23">types.ts:23</a></li></ul></aside></section>
+<li>Defined in <a href="https://github.com/ProjectOpenSea/opensea-js/blob/bea2b4c/src/types.ts#L19">types.ts:19</a></li></ul></aside></section>
 <section class="tsd-panel tsd-member"><a id="TransactionCreated" class="tsd-anchor"></a>
 <h3 class="tsd-anchor-link"><span>Transaction<wbr/>Created</span><a href="#TransactionCreated" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></h3>
-<div class="tsd-signature"><span class="tsd-kind-enum-member">Transaction<wbr/>Created</span><span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">&quot;TransactionCreated&quot;</span></div><aside class="tsd-sources">
+<div class="tsd-signature"><span class="tsd-kind-enum-member">Transaction<wbr/>Created</span><span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">&quot;TransactionCreated&quot;</span></div>
+<div class="tsd-comment tsd-typography"><p>Emitted when the transaction is sent to the network and the application
+is waiting for the transaction to be mined.</p>
+</div>
+<div class="tsd-comment tsd-typography"></div><aside class="tsd-sources">
 <ul>
-<li>Defined in <a href="https://github.com/ProjectOpenSea/opensea-js/blob/89cdaa3/src/types.ts#L22">types.ts:22</a></li></ul></aside></section>
+<li>Defined in <a href="https://github.com/ProjectOpenSea/opensea-js/blob/bea2b4c/src/types.ts#L15">types.ts:15</a></li></ul></aside></section>
 <section class="tsd-panel tsd-member"><a id="TransactionDenied" class="tsd-anchor"></a>
 <h3 class="tsd-anchor-link"><span>Transaction<wbr/>Denied</span><a href="#TransactionDenied" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></h3>
-<div class="tsd-signature"><span class="tsd-kind-enum-member">Transaction<wbr/>Denied</span><span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">&quot;TransactionDenied&quot;</span></div><aside class="tsd-sources">
+<div class="tsd-signature"><span class="tsd-kind-enum-member">Transaction<wbr/>Denied</span><span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">&quot;TransactionDenied&quot;</span></div>
+<div class="tsd-comment tsd-typography"><p>Emitted when the transaction has failed to be submitted.</p>
+</div>
+<div class="tsd-comment tsd-typography"></div><aside class="tsd-sources">
 <ul>
-<li>Defined in <a href="https://github.com/ProjectOpenSea/opensea-js/blob/89cdaa3/src/types.ts#L24">types.ts:24</a></li></ul></aside></section>
+<li>Defined in <a href="https://github.com/ProjectOpenSea/opensea-js/blob/bea2b4c/src/types.ts#L23">types.ts:23</a></li></ul></aside></section>
 <section class="tsd-panel tsd-member"><a id="TransactionFailed" class="tsd-anchor"></a>
 <h3 class="tsd-anchor-link"><span>Transaction<wbr/>Failed</span><a href="#TransactionFailed" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></h3>
-<div class="tsd-signature"><span class="tsd-kind-enum-member">Transaction<wbr/>Failed</span><span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">&quot;TransactionFailed&quot;</span></div><aside class="tsd-sources">
+<div class="tsd-signature"><span class="tsd-kind-enum-member">Transaction<wbr/>Failed</span><span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">&quot;TransactionFailed&quot;</span></div>
+<div class="tsd-comment tsd-typography"><p>Emitted when the transaction has failed to be mined.</p>
+</div>
+<div class="tsd-comment tsd-typography"></div><aside class="tsd-sources">
 <ul>
-<li>Defined in <a href="https://github.com/ProjectOpenSea/opensea-js/blob/89cdaa3/src/types.ts#L25">types.ts:25</a></li></ul></aside></section>
-<section class="tsd-panel tsd-member"><a id="TransferAll" class="tsd-anchor"></a>
-<h3 class="tsd-anchor-link"><span>Transfer<wbr/>All</span><a href="#TransferAll" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></h3>
-<div class="tsd-signature"><span class="tsd-kind-enum-member">Transfer<wbr/>All</span><span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">&quot;TransferAll&quot;</span></div><aside class="tsd-sources">
-<ul>
-<li>Defined in <a href="https://github.com/ProjectOpenSea/opensea-js/blob/89cdaa3/src/types.ts#L46">types.ts:46</a></li></ul></aside></section>
-<section class="tsd-panel tsd-member"><a id="TransferOne" class="tsd-anchor"></a>
-<h3 class="tsd-anchor-link"><span>Transfer<wbr/>One</span><a href="#TransferOne" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></h3>
-<div class="tsd-signature"><span class="tsd-kind-enum-member">Transfer<wbr/>One</span><span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">&quot;TransferOne&quot;</span></div><aside class="tsd-sources">
-<ul>
-<li>Defined in <a href="https://github.com/ProjectOpenSea/opensea-js/blob/89cdaa3/src/types.ts#L47">types.ts:47</a></li></ul></aside></section>
-<section class="tsd-panel tsd-member"><a id="UnapproveCurrency" class="tsd-anchor"></a>
-<h3 class="tsd-anchor-link"><span>Unapprove<wbr/>Currency</span><a href="#UnapproveCurrency" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></h3>
-<div class="tsd-signature"><span class="tsd-kind-enum-member">Unapprove<wbr/>Currency</span><span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">&quot;UnapproveCurrency&quot;</span></div><aside class="tsd-sources">
-<ul>
-<li>Defined in <a href="https://github.com/ProjectOpenSea/opensea-js/blob/89cdaa3/src/types.ts#L34">types.ts:34</a></li></ul></aside></section>
-<section class="tsd-panel tsd-member"><a id="UnwrapAssets" class="tsd-anchor"></a>
-<h3 class="tsd-anchor-link"><span>Unwrap<wbr/>Assets</span><a href="#UnwrapAssets" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></h3>
-<div class="tsd-signature"><span class="tsd-kind-enum-member">Unwrap<wbr/>Assets</span><span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">&quot;UnwrapAssets&quot;</span></div><aside class="tsd-sources">
-<ul>
-<li>Defined in <a href="https://github.com/ProjectOpenSea/opensea-js/blob/89cdaa3/src/types.ts#L51">types.ts:51</a></li></ul></aside></section>
+<li>Defined in <a href="https://github.com/ProjectOpenSea/opensea-js/blob/bea2b4c/src/types.ts#L27">types.ts:27</a></li></ul></aside></section>
 <section class="tsd-panel tsd-member"><a id="UnwrapWeth" class="tsd-anchor"></a>
 <h3 class="tsd-anchor-link"><span>Unwrap<wbr/>Weth</span><a href="#UnwrapWeth" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></h3>
-<div class="tsd-signature"><span class="tsd-kind-enum-member">Unwrap<wbr/>Weth</span><span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">&quot;UnwrapWeth&quot;</span></div><aside class="tsd-sources">
+<div class="tsd-signature"><span class="tsd-kind-enum-member">Unwrap<wbr/>Weth</span><span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">&quot;UnwrapWeth&quot;</span></div>
+<div class="tsd-comment tsd-typography"><p>Emitted when the <a href="../classes/OpenSeaSDK.html#unwrapWeth" class="tsd-kind-method">unwrapWeth</a> method is called.</p>
+</div>
+<div class="tsd-comment tsd-typography"></div><aside class="tsd-sources">
 <ul>
-<li>Defined in <a href="https://github.com/ProjectOpenSea/opensea-js/blob/89cdaa3/src/types.ts#L30">types.ts:30</a></li></ul></aside></section>
-<section class="tsd-panel tsd-member"><a id="WrapAssets" class="tsd-anchor"></a>
-<h3 class="tsd-anchor-link"><span>Wrap<wbr/>Assets</span><a href="#WrapAssets" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></h3>
-<div class="tsd-signature"><span class="tsd-kind-enum-member">Wrap<wbr/>Assets</span><span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">&quot;WrapAssets&quot;</span></div><aside class="tsd-sources">
-<ul>
-<li>Defined in <a href="https://github.com/ProjectOpenSea/opensea-js/blob/89cdaa3/src/types.ts#L50">types.ts:50</a></li></ul></aside></section>
+<li>Defined in <a href="https://github.com/ProjectOpenSea/opensea-js/blob/bea2b4c/src/types.ts#L36">types.ts:36</a></li></ul></aside></section>
 <section class="tsd-panel tsd-member"><a id="WrapEth" class="tsd-anchor"></a>
 <h3 class="tsd-anchor-link"><span>Wrap<wbr/>Eth</span><a href="#WrapEth" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></h3>
-<div class="tsd-signature"><span class="tsd-kind-enum-member">Wrap<wbr/>Eth</span><span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">&quot;WrapEth&quot;</span></div><aside class="tsd-sources">
+<div class="tsd-signature"><span class="tsd-kind-enum-member">Wrap<wbr/>Eth</span><span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">&quot;WrapEth&quot;</span></div>
+<div class="tsd-comment tsd-typography"><p>Emitted when the <a href="../classes/OpenSeaSDK.html#wrapEth" class="tsd-kind-method">wrapEth</a> method is called.</p>
+</div>
+<div class="tsd-comment tsd-typography"></div><aside class="tsd-sources">
 <ul>
-<li>Defined in <a href="https://github.com/ProjectOpenSea/opensea-js/blob/89cdaa3/src/types.ts#L29">types.ts:29</a></li></ul></aside></section></section></div>
+<li>Defined in <a href="https://github.com/ProjectOpenSea/opensea-js/blob/bea2b4c/src/types.ts#L32">types.ts:32</a></li></ul></aside></section></section></div>
 <div class="col-sidebar">
 <div class="page-menu">
 <div class="tsd-navigation settings">
@@ -193,7 +124,6 @@ transfer one or more assets to another account</li>
 <h4 class="uppercase">Member Visibility</h4><form>
 <ul id="tsd-filter-options">
 <li class="tsd-filter-item"><label class="tsd-filter-input"><input type="checkbox" id="tsd-filter-protected" name="protected"/><svg width="32" height="32" viewBox="0 0 32 32" aria-hidden="true"><rect class="tsd-checkbox-background" width="30" height="30" x="1" y="1" rx="6" fill="none"></rect><path class="tsd-checkbox-checkmark" d="M8.35422 16.8214L13.2143 21.75L24.6458 10.25" stroke="none" stroke-width="3.5" stroke-linejoin="round" fill="none"></path></svg><span>Protected</span></label></li>
-<li class="tsd-filter-item"><label class="tsd-filter-input"><input type="checkbox" id="tsd-filter-private" name="private"/><svg width="32" height="32" viewBox="0 0 32 32" aria-hidden="true"><rect class="tsd-checkbox-background" width="30" height="30" x="1" y="1" rx="6" fill="none"></rect><path class="tsd-checkbox-checkmark" d="M8.35422 16.8214L13.2143 21.75L24.6458 10.25" stroke="none" stroke-width="3.5" stroke-linejoin="round" fill="none"></path></svg><span>Private</span></label></li>
 <li class="tsd-filter-item"><label class="tsd-filter-input"><input type="checkbox" id="tsd-filter-inherited" name="inherited" checked/><svg width="32" height="32" viewBox="0 0 32 32" aria-hidden="true"><rect class="tsd-checkbox-background" width="30" height="30" x="1" y="1" rx="6" fill="none"></rect><path class="tsd-checkbox-checkmark" d="M8.35422 16.8214L13.2143 21.75L24.6458 10.25" stroke="none" stroke-width="3.5" stroke-linejoin="round" fill="none"></path></svg><span>Inherited</span></label></li>
 <li class="tsd-filter-item"><label class="tsd-filter-input"><input type="checkbox" id="tsd-filter-external" name="external"/><svg width="32" height="32" viewBox="0 0 32 32" aria-hidden="true"><rect class="tsd-checkbox-background" width="30" height="30" x="1" y="1" rx="6" fill="none"></rect><path class="tsd-checkbox-checkmark" d="M8.35422 16.8214L13.2143 21.75L24.6458 10.25" stroke="none" stroke-width="3.5" stroke-linejoin="round" fill="none"></path></svg><span>External</span></label></li></ul></form></div>
 <div class="tsd-theme-toggle">
@@ -202,38 +132,38 @@ transfer one or more assets to another account</li>
 <h3><svg width="20" height="20" viewBox="0 0 24 24" fill="none"><use href="#icon-chevronDown"></use></svg>On This Page</h3></summary>
 <div class="tsd-accordion-details">
 <ul>
-<li><a href="#ApproveAllAssets" class=""><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-1024"></use></svg><span>Approve<wbr/>All<wbr/>Assets</span></a></li>
-<li><a href="#ApproveAsset" class=""><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-1024"></use></svg><span>Approve<wbr/>Asset</span></a></li>
-<li><a href="#ApproveCurrency" class=""><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-1024"></use></svg><span>Approve<wbr/>Currency</span></a></li>
 <li><a href="#ApproveOrder" class=""><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-1024"></use></svg><span>Approve<wbr/>Order</span></a></li>
-<li><a href="#BulkCancelExistingOrders" class=""><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-1024"></use></svg><span>Bulk<wbr/>Cancel<wbr/>Existing<wbr/>Orders</span></a></li>
 <li><a href="#CancelOrder" class=""><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-1024"></use></svg><span>Cancel<wbr/>Order</span></a></li>
-<li><a href="#CreateOrder" class=""><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-1024"></use></svg><span>Create<wbr/>Order</span></a></li>
-<li><a href="#InitializeAccount" class=""><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-1024"></use></svg><span>Initialize<wbr/>Account</span></a></li>
-<li><a href="#LiquidateAssets" class=""><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-1024"></use></svg><span>Liquidate<wbr/>Assets</span></a></li>
 <li><a href="#MatchOrders" class=""><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-1024"></use></svg><span>Match<wbr/>Orders</span></a></li>
-<li><a href="#OrderDenied" class=""><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-1024"></use></svg><span>Order<wbr/>Denied</span></a></li>
-<li><a href="#PurchaseAssets" class=""><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-1024"></use></svg><span>Purchase<wbr/>Assets</span></a></li>
 <li><a href="#TransactionConfirmed" class=""><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-1024"></use></svg><span>Transaction<wbr/>Confirmed</span></a></li>
 <li><a href="#TransactionCreated" class=""><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-1024"></use></svg><span>Transaction<wbr/>Created</span></a></li>
 <li><a href="#TransactionDenied" class=""><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-1024"></use></svg><span>Transaction<wbr/>Denied</span></a></li>
 <li><a href="#TransactionFailed" class=""><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-1024"></use></svg><span>Transaction<wbr/>Failed</span></a></li>
-<li><a href="#TransferAll" class=""><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-1024"></use></svg><span>Transfer<wbr/>All</span></a></li>
-<li><a href="#TransferOne" class=""><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-1024"></use></svg><span>Transfer<wbr/>One</span></a></li>
-<li><a href="#UnapproveCurrency" class=""><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-1024"></use></svg><span>Unapprove<wbr/>Currency</span></a></li>
-<li><a href="#UnwrapAssets" class=""><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-1024"></use></svg><span>Unwrap<wbr/>Assets</span></a></li>
 <li><a href="#UnwrapWeth" class=""><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-1024"></use></svg><span>Unwrap<wbr/>Weth</span></a></li>
-<li><a href="#WrapAssets" class=""><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-1024"></use></svg><span>Wrap<wbr/>Assets</span></a></li>
 <li><a href="#WrapEth" class=""><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-1024"></use></svg><span>Wrap<wbr/>Eth</span></a></li></ul></div></details></div>
 <div class="site-menu">
-<nav class="tsd-navigation"><a href="../modules.html"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><g id="icon-4"><rect fill="var(--color-icon-background)" stroke="var(--color-ts-namespace)" stroke-width="1.5" x="1" y="1" width="22" height="22" rx="6"></rect><path d="M9.33 16V7.24H10.77L13.446 14.74C13.43 14.54 13.41 14.296 13.386 14.008C13.37 13.712 13.354 13.404 13.338 13.084C13.33 12.756 13.326 12.448 13.326 12.16V7.24H14.37V16H12.93L10.266 8.5C10.282 8.692 10.298 8.936 10.314 9.232C10.33 9.52 10.342 9.828 10.35 10.156C10.366 10.476 10.374 10.784 10.374 11.08V16H9.33Z" fill="var(--color-text)"></path></g></svg><span>opensea-<wbr/>js</span></a>
+<nav class="tsd-navigation"><a href="../modules.html"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><g id="icon-4"><rect fill="var(--color-icon-background)" stroke="var(--color-ts-namespace)" stroke-width="1.5" x="1" y="1" width="22" height="22" rx="6"></rect><path d="M9.33 16V7.24H10.77L13.446 14.74C13.43 14.54 13.41 14.296 13.386 14.008C13.37 13.712 13.354 13.404 13.338 13.084C13.33 12.756 13.326 12.448 13.326 12.16V7.24H14.37V16H12.93L10.266 8.5C10.282 8.692 10.298 8.936 10.314 9.232C10.33 9.52 10.342 9.828 10.35 10.156C10.366 10.476 10.374 10.784 10.374 11.08V16H9.33Z" fill="var(--color-text)"></path></g></svg><span>opensea-<wbr/>js -<wbr/> v6.1.5</span></a>
 <ul class="tsd-small-nested-navigation">
-<li><a href="../modules.html#OpenSeaPort"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><g id="icon-8388608"><rect fill="var(--color-icon-background)" stroke="#FF4D82" stroke-width="1.5" x="1" y="1" width="22" height="22" rx="12"></rect><path d="M10.354 17V8.24H13.066C13.586 8.24 14.042 8.348 14.434 8.564C14.826 8.772 15.13 9.064 15.346 9.44C15.562 9.816 15.67 10.256 15.67 10.76C15.67 11.352 15.514 11.86 15.202 12.284C14.898 12.708 14.482 13 13.954 13.16L15.79 17H14.518L12.838 13.28H11.434V17H10.354ZM11.434 12.308H13.066C13.514 12.308 13.874 12.168 14.146 11.888C14.418 11.6 14.554 11.224 14.554 10.76C14.554 10.288 14.418 9.912 14.146 9.632C13.874 9.352 13.514 9.212 13.066 9.212H11.434V12.308Z" fill="var(--color-text)"></path></g></svg><span>Open<wbr/>Sea<wbr/>Port</span></a></li>
 <li><a href="Chain.html"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><g id="icon-8"><rect fill="var(--color-icon-background)" stroke="var(--color-ts-enum)" stroke-width="1.5" x="1" y="1" width="22" height="22" rx="6"></rect><path d="M9.45 16V7.24H14.49V8.224H10.518V10.936H14.07V11.908H10.518V15.016H14.49V16H9.45Z" fill="var(--color-text)"></path></g></svg><span>Chain</span></a></li>
 <li><a href="EventType.html" class="current"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-8"></use></svg><span>Event<wbr/>Type</span></a></li>
 <li><a href="../classes/OpenSeaAPI.html"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><g id="icon-128"><rect fill="var(--color-icon-background)" stroke="var(--color-ts-class)" stroke-width="1.5" x="1" y="1" width="22" height="22" rx="6"></rect><path d="M11.898 16.1201C11.098 16.1201 10.466 15.8961 10.002 15.4481C9.53803 15.0001 9.30603 14.3841 9.30603 13.6001V9.64012C9.30603 8.85612 9.53803 8.24012 10.002 7.79212C10.466 7.34412 11.098 7.12012 11.898 7.12012C12.682 7.12012 13.306 7.34812 13.77 7.80412C14.234 8.25212 14.466 8.86412 14.466 9.64012H13.386C13.386 9.14412 13.254 8.76412 12.99 8.50012C12.734 8.22812 12.37 8.09212 11.898 8.09212C11.426 8.09212 11.054 8.22412 10.782 8.48812C10.518 8.75212 10.386 9.13212 10.386 9.62812V13.6001C10.386 14.0961 10.518 14.4801 10.782 14.7521C11.054 15.0161 11.426 15.1481 11.898 15.1481C12.37 15.1481 12.734 15.0161 12.99 14.7521C13.254 14.4801 13.386 14.0961 13.386 13.6001H14.466C14.466 14.3761 14.234 14.9921 13.77 15.4481C13.306 15.8961 12.682 16.1201 11.898 16.1201Z" fill="var(--color-text)"></path></g></svg><span>Open<wbr/>SeaAPI</span></a></li>
 <li><a href="../classes/OpenSeaSDK.html"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-128"></use></svg><span>Open<wbr/>SeaSDK</span></a></li>
-<li><a href="../interfaces/EventData.html"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><g id="icon-256"><rect fill="var(--color-icon-background)" stroke="var(--color-ts-interface)" stroke-width="1.5" x="1" y="1" width="22" height="22" rx="6"></rect><path d="M9.51 16V15.016H11.298V8.224H9.51V7.24H14.19V8.224H12.402V15.016H14.19V16H9.51Z" fill="var(--color-text)"></path></g></svg><span>Event<wbr/>Data</span></a></li></ul></nav></div></div></div>
+<li><a href="../interfaces/Asset.html"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><g id="icon-256"><rect fill="var(--color-icon-background)" stroke="var(--color-ts-interface)" stroke-width="1.5" x="1" y="1" width="22" height="22" rx="6"></rect><path d="M9.51 16V15.016H11.298V8.224H9.51V7.24H14.19V8.224H12.402V15.016H14.19V16H9.51Z" fill="var(--color-text)"></path></g></svg><span>Asset</span></a></li>
+<li><a href="../interfaces/EventData.html"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-256"></use></svg><span>Event<wbr/>Data</span></a></li>
+<li><a href="../interfaces/OpenSeaAsset.html"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-256"></use></svg><span>Open<wbr/>Sea<wbr/>Asset</span></a></li>
+<li><a href="../interfaces/OpenSeaAssetBundle.html"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-256"></use></svg><span>Open<wbr/>Sea<wbr/>Asset<wbr/>Bundle</span></a></li>
+<li><a href="../interfaces/OpenSeaCollection.html"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-256"></use></svg><span>Open<wbr/>Sea<wbr/>Collection</span></a></li>
+<li><a href="../types/BuildOfferResponse.html"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><g id="icon-4194304"><rect fill="var(--color-icon-background)" stroke="var(--color-ts-type-alias)" stroke-width="1.5" x="1" y="1" width="22" height="22" rx="6"></rect><path d="M11.31 16V8.224H8.91V7.24H14.79V8.224H12.39V16H11.31Z" fill="var(--color-text)"></path></g></svg><span>Build<wbr/>Offer<wbr/>Response</span></a></li>
+<li><a href="../types/GetAssetsResponse.html"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-4194304"></use></svg><span>Get<wbr/>Assets<wbr/>Response</span></a></li>
+<li><a href="../types/GetBundlesResponse.html"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-4194304"></use></svg><span>Get<wbr/>Bundles<wbr/>Response</span></a></li>
+<li><a href="../types/GetCollectionResponse.html"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-4194304"></use></svg><span>Get<wbr/>Collection<wbr/>Response</span></a></li>
+<li><a href="../types/GetNFTResponse.html"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-4194304"></use></svg><span>GetNFTResponse</span></a></li>
+<li><a href="../types/GetOrdersResponse.html"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-4194304"></use></svg><span>Get<wbr/>Orders<wbr/>Response</span></a></li>
+<li><a href="../types/GetPaymentTokensResponse.html"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-4194304"></use></svg><span>Get<wbr/>Payment<wbr/>Tokens<wbr/>Response</span></a></li>
+<li><a href="../types/ListCollectionOffersResponse.html"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-4194304"></use></svg><span>List<wbr/>Collection<wbr/>Offers<wbr/>Response</span></a></li>
+<li><a href="../types/ListNFTsResponse.html"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-4194304"></use></svg><span>ListNFTs<wbr/>Response</span></a></li>
+<li><a href="../types/NFT.html"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-4194304"></use></svg><span>NFT</span></a></li>
+<li><a href="../types/Offer.html"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-4194304"></use></svg><span>Offer</span></a></li></ul></nav></div></div></div>
 <div class="tsd-generator">
 <p>Generated using <a href="https://typedoc.org/" target="_blank">TypeDoc</a></p></div>
 <div class="overlay"></div></body></html>
